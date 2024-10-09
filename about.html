@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="/Images/WLWhite2.png">
+        <ul class="h1">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Play Quiz</a></li>
+            <li><a href="#">Leaderboard</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+        </ul>
+        <button class="hBtn"><a href="Login.html">LOGIN</a></button>
+    </div>
+
+    <div class="middle">
+
+        <div class="middles1">
+            <img src="home1.jpeg" alt="">
+            <div class="cover"></div>
+            <p class="t1">AboutUs</p>
+            <p class="t2">&nbsp______</p>
+        </div>
+
+        <div class="cover2"></div>
+
+        <div class="middles2">
+            <img class="reveal fade-left" src="home.png">
+            <div class="card1 reveal fade-right">
+                <p class="cardt1">Our Values</p>
+                <p class="cardt2">
+                    Education: We believe that everyone should have the opportunity to learn and grow.<br><br>
+                    Engagement: We believe that learning should be fun and engaging.<br><br>
+                    Accessibility: We believe that our resources should be accessible to everyone, regardless of their
+                    background or abilities.<br><br>
+                    Quality: We believe in providing the best possible resources for our users.<br><br>
+                    Community: We believe in creating a community of learners who are supportive and encouraging.
+                </p>
+            </div>
+        </div>
+
+        <div class="middles3">
+            <img class="reveal fade-right" src="home6.png">
+            <div class="card2 reveal fade-left">
+                <p class="cardt3">Our Misions</p>
+                <p class="cardt4">
+                    To provide fun and engaging quizzes on a variety of topics, so that everyone can learn and
+                    grow.<br><br>
+                    To create a community of learners who are supportive and encouraging.<br><br>
+                    To make learning accessible to everyone, regardless of their background or abilities.<br><br>
+                    To provide the best possible resources for our users, so that they can achieve their educational
+                    goals.<br><br>
+                    To promote the love of learning and make it a lifelong journey for everyone.
+                </p>
+            </div>
+        </div>
+
+        <div class="middles4">
+            <img class="reveal fade-left" src="home5.jpg">
+            <div class="card3 reveal fade-right">
+                <p class="cardt5">Our Future</p>
+                <p class="cardt6">
+                    We're excited about the future of <b>TriviaClickz</b>. We're always looking for new ways to improve
+                    our website and provide the best possible experience for our users. We're also committed to
+                    expanding our reach and providing our resources to more people around the world.<br><br>
+                    We hope that you'll join us on our mission to make learning fun and accessible to everyone!
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <img src="/Images/shape1.svg">
+        <img src="/Images/shape2.svg">
+        <img src="/Images/WLWhite2.png">
+        <ul class="f1">
+            <li>Support</li>
+            <li>Features</li>
+        </ul>
+        <ul class="f2">
+            <li><a href="#">Contact US</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Find US</a></li>
+            <li><a href="#">About US</a></li>
+        </ul>
+        <ul class="f3">
+            <li><a href="#">Create Quiz</a></li>
+            <li><a href="#">Play Quiz</a></li>
+            <li><a href="#">Create Tournament</a></li>
+            <li><a href="#">Leaderboard</a></li>
+        </ul>
+        <ul class="fl">
+            <li><a><i class="fi fi-brands-instagram"></i></a></li>
+            <li><a><i class="fi fi-brands-twitter"></i></a></li>
+            <li><a><i class="fi fi-brands-facebook"></i></a></li>
+            <li><a><i class="fi fi-brands-linkedin"></i></a></li>
+        </ul>
+        <p class="ft">Our Quizzes are The Best Way to <br> Test Your Knowledge and See <br> How You Compare to Others!
+        </p>
+        <div class="form">
+            <form action="">
+                <p></p>
+                <input type="email" placeholder="EMAIL" class="input"><br><br>
+                <button class="fBtn">SUBSCRIBE</button>
+            </form>
+        </div>
+        <div class="lastfoot">
+            <hr class="foothr">
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Legal Notice</a></li>
+                <li><a href="#">Terms of Services</a></li>
+            </ul>
+            <p>Copyright © 2023-Present TriviaClickz. All rights reserved</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+<script>
+
+function reveal() {
+  const reveals = document.querySelectorAll(".reveal");
+
+  reveals.forEach(element => {
+    const windowHeight = window.innerHeight;
+    const elementTop = element.getBoundingClientRect().top;
+    const elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      element.classList.add("active");
+    } 
+	else {
+      element.classList.remove("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", reveal);
+
+</script>
